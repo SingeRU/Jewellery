@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jewellery</title>
+  <link rel="preload" href="fonts/CormorantGaramond-SemiBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Poppins-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="page-body main-body">
+  <svg style="display: none">
+    <symbol id="burger" width="25" height="18" viewBox="0 0 25 18">
+      <path d="M0 1H25M0 9H25M0 17H25" stroke="#1D1613" stroke-width="2"></path>
+    </symbol>
+
+    <symbol id="basket" width="20" height="18" fill="none">
+      <path d="M14 5a4 4 0 11-8 0M1 1h18v16H1V1z" stroke="#1D1613" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    </symbol>
+  </svg>
+  <header class="header">
+    <h1 class="visually-hidden">Шапка</h1>
+    <div class="container header-container">
+      <button class="header-burger" type="button">
+        <svg width="25" height="18" viewBox="0 0 25 18">
+          <use xlink:href="#burger"></use>
+        </svg>
+      </button>
+      <section class="header-top">
+        <div class="header-top__search">
+          <label>
+            <input class="header-top__input" type="search" placeholder="Type here to search">
+          </label>
+        </div>
+        <div class="header-top__logo">
+          <img src="img/logo.svg" alt="Logo">
+        </div>
+        <div class="header-top__options options">
+          <button class="options-login">Login</button>
+          <a href="#" class="options-cart">Cart 0</a>
+        </div>
+      </section>
+      <section class="header-bottom">
+        <ul class="header-bottom__list">
+          <li class="header-bottom__item">
+            <a class="header-bottom__link" href="#">What’s new</a>
+          </li>
+          <li class="header-bottom__item">
+            <a class="header-bottom__link" href="#">Chokers</a>
+          </li>
+          <li class="header-bottom__item">
+            <a class="header-bottom__link" href="#">Necklaces</a>
+          </li>
+          <li class="header-bottom__item">
+            <a class="header-bottom__link" href="#">Rings</a>
+          </li>
+          <li class="header-bottom__item">
+            <a class="header-bottom__link" href="#">Earrings</a>
+          </li>
+        </ul>
+      </section>
+      <button class="options-image">
+        <svg width="20" height="18" fill="none">
+          <use xlink:href="#basket"></use>
+        </svg>
+      </button>
+    </div>
+  </header>
+  <main class="main">Main</main>
+  <footer class="footer">
+    <h1 class="visually-hidden">Футер</h1>
+    <div class="container footer-container">
+      <section class="singup">
+        <h2 class="singup-title">The good stuff in your inbox </h2>
+        <p class="singup-text">News and updates from CH. No spam, we promise.</p>
+        <div class="singup-field">
+          <label>
+            <input class="singup-input" type="email" placeholder="Your E-mail">
+          </label>
+          <a class="signup-button">Sign Up</a>
+        </div>
+      </section>
+      <section class="functions">
+        <ul class="functions-list">
+          <li class="functions-list__item">
+            <a class="functions-list__link" href="">
+              Ordering & Payment
+            </a>
+          </li>
+          <li class="functions-list__item">
+            <a class="functions-list__link" href="">
+              Terms & Conditions
+            </a>
+          </li>
+          <li class="functions-list__item">
+            <a class="functions-list__link" href="">
+              Returns & Exchanges
+            </a>
+          </li>
+          <li class="functions-list__item">
+            <a class="functions-list__link" href="">
+              Delivery
+            </a>
+          </li>
+          <li class="functions-list__item">
+            <a class="functions-list__link" href="">
+              About CH
+            </a>
+          </li>
+          <li class="functions-list__item">
+            <a class="functions-list__link" href="">
+              Stores & Hours
+            </a>
+          </li>
+          <li class="functions-list__item">
+            <a class="functions-list__link" href="">
+              Jobs
+            </a>
+          </li>
+          <li class="functions-list__item">
+            <a class="functions-list__link" href="">
+              Contact Us
+            </a>
+          </li>
+          
+        </ul>
+        </section>
+      <section class="socials">
+        <ul class="socials-list">
+          <li class="socials-list__item">
+            <a href="#" class="socails-list__link socails-list__link--facebook"><span>Facebook</span></a>
+          </li>
+          <li class="socials-list__item">
+            <a href="#" class="socails-list__link socails-list__link--instagram"><span>Instagram</span></a>
+          </li>
+          <li class="socials-list__item">
+            <a href="#" class="socails-list__link socails-list__link--pinterest"><span>Pinterest</span></a>
+          </li>
+          <li class="socials-list__item">
+            <a href="#" class="socails-list__link socails-list__link--twitter"><span>Twitter</span></a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </footer>
+</body>
+</html>

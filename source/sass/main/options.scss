@@ -1,0 +1,49 @@
+.options-login,
+.options-cart {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    border: none;
+    background-color: $white;
+    padding: 0;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.options-image {
+    display: none;
+}
+
+.options-login {
+    margin-right: 2rem;
+}
+
+.options-cart {
+    text-decoration: none;
+}
+
+.options-login:hover,
+.options-cart:hover {
+    color: $brown;
+}
+
+.options-login:active,
+.options-cart:active {
+    opacity: 0.7;
+}
+
+@media(max-width: $desktop-width) {
+    .options-login,
+    .options-cart {
+        display: none;
+    }
+
+    .options-image {
+        display: block;
+        background-color: $white;
+        border: none;
+    }
+}
