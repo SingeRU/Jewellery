@@ -1,15 +1,47 @@
-'use strict';
-var pageHeader = document.querySelector('.page-header');
-var headerToggle = document.querySelector('.page-header__toggle');
+let acc = document.getElementsByClassName("accordion");
 
-pageHeader.classList.remove('page-header--nojs');
+for (let i = 0; i < acc.length; i++) {
+	acc[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		let panel = this.nextElementSibling;
+		if (panel.style.maxHeight){
+			panel.style.maxHeight = null;
+		} else {
+			panel.style.maxHeight = panel.scrollHeight + "px";
+		} 
+	});
+}
 
-headerToggle.addEventListener('click', function () {
-  if (pageHeader.classList.contains('page-header--closed')) {
-    pageHeader.classList.remove('page-header--closed');
-    pageHeader.classList.add('page-header--opened');
-  } else {
-    pageHeader.classList.add('page-header--closed');
-    pageHeader.classList.remove('page-header--opened');
-  }
-});
+const swiper = new Swiper('.swiper', {
+
+	direction: 'horizontal',
+	loop: false,
+
+	breakpoints: {
+		320: {
+			slidesPerView: 2,
+			spaceBetween: 20
+		},
+
+		1024: {
+			slidesPerView: 4,
+			spaceBetween: 20
+		}
+	},
+  
+	pagination: {
+	  el: '.swiper-pagination',
+	  clickable: true,
+	  renderBullet: function (index, className) {
+		  return '<span class="' + className + '">' + (index + 1) + '</span>';
+	  },
+	},
+  
+
+	navigation: {
+	  nextEl: '.swiper-button-next',
+	  prevEl: '.swiper-button-prev',
+	},
+
+  });
+  

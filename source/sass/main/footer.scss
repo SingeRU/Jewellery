@@ -3,6 +3,7 @@
     background-color: $black;
     min-height: 338px;
     padding-top: 3rem;
+    margin-top: 8.1rem;
 }
 
 .footer-container {
@@ -236,6 +237,7 @@
     .footer {
         padding-top: 0.6rem;
         height: 100%;
+        margin-top: 5.1rem;
     }
 
     .footer-container {
@@ -287,6 +289,10 @@
 }
 
 @media (max-width: $tablet-width) {
+    .footer {
+        margin-top: 1.6rem;
+    }
+
     .footer-container {
         padding: 0 1rem;
     }

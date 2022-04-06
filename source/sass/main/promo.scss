@@ -1,0 +1,106 @@
+.promo {
+
+    margin-top: 1.2rem;
+}
+
+.promo-container {
+    max-width: 1366px;
+    min-width: $mobile-width;
+    margin: 0 auto;
+    padding-top: 11.5rem;
+    padding-bottom: 9.1rem;
+
+    background: url("../../img/main-background.webp");
+    background-size: cover;
+    background-position: center;
+
+    @media(min-resolution: 2dppx) {
+        background: url("../../img/main-background@2x.webp");
+        background-position: center;
+        background-size: cover;
+    }
+
+    text-align: center;
+    color: $white;
+}
+
+.promo-title {
+    font-family: "Cormorant";
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 52px;
+    margin-top: 0;
+    letter-spacing: 0.09rem;
+    margin-bottom: 0;
+}
+
+
+.promo-text {
+    font-family: "Cormorant";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 43px;
+    margin-top: 0;
+}
+  
+  
+@media (max-width: $desktop-width) {
+    .promo {
+        margin-top: 1.7rem;
+    }
+
+    .promo-container {
+      max-width: 100%;
+
+      background: url("../../img/main-background-tab.webp");
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      @media(min-resolution: 2dppx) {
+            background: url("../../img/main-background-tab@2x.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+  
+    }
+}
+  
+@media (max-width: $tablet-width) {
+    .promo {
+        margin-top: 0.6rem;
+    }
+
+    .promo-container {
+        padding-top: 11.8rem;
+        padding-bottom: 12.1rem;
+        background: url("../../img/main-background-mob.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        @media(min-resolution: 2dppx) {
+            background: url("../../img/main-background-mob@2x.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+  
+    }
+
+    .promo-title {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 49px;
+        letter-spacing: 0.07rem;
+    }
+    
+    
+    .promo-text {
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 31px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+  

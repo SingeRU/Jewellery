@@ -7,6 +7,7 @@
   <title>Jewellery</title>
   <link rel="preload" href="fonts/CormorantGaramond-SemiBold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Poppins-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page-body main-body">
@@ -67,7 +68,169 @@
       </button>
     </div>
   </header>
-  <main class="main">Main</main>
+  <main class="main">
+    <section class="promo">
+      <div class="promo-container">
+        <h1 class="promo-title">PERFECTION</h1>
+        <p class="promo-text">made to be yours</p>
+      </div>
+    </section>
+    <section class="slider container">
+      <h1 class="slider-title">New In</h1>
+      <a class="slider-link" href="#">Shop Now</a>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="image-slider swiper">
+        
+
+        <div class="image-slider__wrapper swiper-wrapper">
+          <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image">
+              <img src="img/necklace.webp" alt="Амулет" width="270" height="284">
+              <h3 class="image-slider__title">Necklace with amethyst</h3>
+              <p class="image-slider__text">$ 145</p>
+            </div>  
+          </div>
+          <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image">
+              <img src="img/choker.webp" alt="Чокер" width="270" height="284">
+              <h3 class="image-slider__title">Layered сhoker</h3>
+              <p class="image-slider__text">$ 115</p>
+            </div>  
+          </div>
+          <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image">
+              <img src="img/gold-necklace.webp" alt="Цепочка" width="270" height="284">
+              <h3 class="image-slider__title">Gold chain</h3>
+              <p class="image-slider__text">$ 215</p>
+            </div>  
+          </div>
+          <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image">
+              <img src="img/earrings.webp" alt="Сережки" width="270" height="284">
+              <h3 class="image-slider__title">Galaxy earrings</h3>
+              <p class="image-slider__text">$ 95</p>
+            </div>  
+          </div>
+          <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image">
+              <img src="img/necklace.webp" alt="Амулет" width="270" height="284">
+              <h3 class="image-slider__title">Necklace with amethyst</h3>
+              <p class="image-slider__text">$ 145</p>
+            </div>  
+          </div>
+          <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image">
+              <img src="img/choker.webp" alt="Чокер" width="270" height="284">
+              <h3 class="image-slider__title">Layered сhoker</h3>
+              <p class="image-slider__text">$ 115</p>
+            </div>  
+          </div>
+          <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image">
+              <img src="img/gold-necklace.webp" alt="Цепочка" width="270" height="284">
+              <h3 class="image-slider__title">Gold chain</h3>
+              <p class="image-slider__text">$ 215</p>
+            </div>  
+          </div>
+        </div>
+        <div class="image-pagination swiper-pagination">
+        </div>
+      </div>
+    </section>
+    <section class="blog container">
+      <h1 class="blog-title">Blog</h1>
+      <a class="blog-link" href="#">Read All</a>
+      <div class="blog-body">
+        <div class="blog-body__event">
+          <div class="blog-body__image">
+            <img src="img/jess-harper.webp" srcset="img/jess-harper.webp 1x, img/jess-harper@2x.webp 2x" alt="Jess Harper" width="285" height="300">
+          </div>
+          <div class="blog-body__description blog-body__description--care">
+            <p class="blog-body__text">September 30, 2019</p>
+            <h2 class="blog-body__title">How to care for your jewellery</h2>
+            <a class="blog-body__link" href="#">Read Article</a>
+          </div>
+        </div>
+        <div class="blog-body__event blog-body__event--crystals">
+          <div class="blog-body__image">
+            <img src="img/alex-holyoake.webp" srcset="img/alex-holyoake.webp 1x, img/alex-holyoake@2x.webp 2x" alt="Jess Harper" width="285" height="300">
+          </div>
+          <div class="blog-body__description blog-body__description--crystals">
+            <p class="blog-body__text">September 23, 2019</p>
+            <h2 class="blog-body__title">Power of crystals</h2>
+            <a class="blog-body__link" href="#">Read Article</a>
+          </div>
+        </div>
+        <div class="blog-body__event blog-body__event--trends">
+          <div class="blog-body__image">
+            <img src="img/alve-odonnel.webp" srcset="img/alve-odonnel.webp 1x, img/alve-odonnel@2x.webp 2x" alt="Jess Harper" width="570" height="630">
+          </div>
+          <div class="blog-body__description">
+            <p class="blog-body__text">September 23, 2019</p>
+            <h2 class="blog-body__title">AW 19 trends</h2>
+            <a class="blog-body__link" href="#">Read Article</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main-accordion container">
+      <h2 class="main-accordion__title">Frequently asked questions</h2>
+      <div class="main-accrodion__wrapper">
+        <div class="main-accordion__container">
+          <button class="accordion">What materials are the jewellery made of?</button>
+          <div class="panel">
+            <p class="text">Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+          </div>
+        </div>
+        <div class="main-accordion__container">
+          <button class="accordion">Which countries do you deliver to?</button>
+          <div class="panel">
+            <p class="text">Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+          </div>
+        </div>
+        <div class="main-accordion__container">
+          <button class="accordion">What are the payment methods?</button>
+          <div class="panel">
+            <p class="text">Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+          </div>
+        </div>
+        <div class="main-accordion__container">
+          <button class="accordion">Can I return the jewellery if it didn’t fit me?</button>
+          <div class="panel">
+            <p class="text">Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="grid container">
+      <h1 class="grid-title">@Chjewellery</h1>
+      <a class="grid-link" href="#">Follow Us</a>
+      <div class="grid-body">
+        <div class="grid-block grid-block--1">
+          <img src="img/photo-1.webp" srcset="img/photo-1.webp 1x, img/photo-1@2x.webp 2x" alt="Jess Harper" width="230" height="230">
+        </div>
+        <div class="grid-block grid-block--2">
+          <img src="img/photo-2.webp" srcset="img/photo-2.webp 1x, img/photo-1@2x.webp 2x" alt="Jess Harper" width="230" height="150">
+        </div>
+        <div class="grid-block grid-block--3">
+          <img src="img/photo-3.webp" srcset="img/photo-3.webp 1x, img/photo-3@2x.webp 2x" alt="Jess Harper" width="399" height="412">
+        </div>
+        <div class="grid-block grid-block--4">
+          <img src="img/photo-4.webp" srcset="img/photo-4.webp 1x, img/photo-4@2x.webp 2x" alt="Jess Harper" width="230" height="230">
+        </div>
+        <div class="grid-block grid-block--5">
+          <img src="img/photo-5.webp" srcset="img/photo-5.webp 1x, img/photo-5@2x.webp 2x" alt="Jess Harper" width="230" height="150">
+        </div>
+        <div class="grid-block grid-block--6">
+          <img src="img/photo-6.webp" srcset="img/photo-6.webp 1x, img/photo-6@2x.webp 2x" alt="Jess Harper" width="230" height="230">
+        </div>
+        <div class="grid-block grid-block--7">
+          <img src="img/photo-7.webp" srcset="img/photo-7.webp 1x, img/photo-7@2x.webp 2x" alt="Jess Harper" width="230" height="150">
+        </div>
+      </div>
+    </section>
+  </main>
   <footer class="footer">
     <h1 class="visually-hidden">Футер</h1>
     <div class="container footer-container">
@@ -123,7 +286,6 @@
               Contact Us
             </a>
           </li>
-          
         </ul>
         </section>
       <section class="socials">
@@ -144,5 +306,7 @@
       </section>
     </div>
   </footer>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,158 @@
+.main-accordion {
+  margin-top: 7.6rem;
+}
+
+.main-accrodion__wrapper {
+  border: 1px solid $brown;
+}
+
+.main-accrodion__wrapper {
+  max-width: 970px;
+  min-width: $mobile-width;
+  margin: 0 auto;
+}
+
+.main-accordion__container {
+  border-bottom: 1px solid $brown;
+}
+
+
+.main-accordion__container:nth-child(4n) {
+  border: none;
+}
+
+.main-accordion__title {
+  font-family: "Cormorant";
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 44px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+
+.accordion {
+  background-color: $white;
+  color: $dark;
+  cursor: pointer;
+  padding: 2.6rem;
+  padding-bottom: 2.8rem;
+  width: 100%;
+  border: none;
+  
+  position: relative;
+
+  text-align: left;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.active {
+  background-color: $white;
+  padding-bottom: 0.6rem;
+}
+
+.accordion:after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 8px;
+  background: url("../../img/accord-arrow.svg");
+  right: 3.1rem;
+  top: 3.1rem;
+  transition: 0.3s;
+  transform: rotate(180deg);
+}
+
+.active:after {
+	transform: rotate(360deg);
+}
+
+.panel {
+	padding: 0 18px;
+	background-color: $white;
+	max-height: 0;
+	overflow: hidden;
+}
+
+.text {
+  padding-left: 2rem;
+  padding-right: 24rem;
+  margin-top: 0;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+@media (max-width: $desktop-width) {
+  .main-accordion {
+    margin-top: 4.4rem;
+  }
+  
+  .main-accrodion__wrapper {
+    max-width: 88%;
+  }
+
+  .accordion {
+    padding: 2.6rem 3rem 2.8rem;
+  }
+
+  .accordion:after {
+    transform: rotate(180deg) scale(1.6);
+    right: 3.3rem;
+  }
+
+  .active {
+    padding-bottom: 0.6rem;
+  }
+
+  .active:after {
+    transform: rotate(360deg) scale(1.6);
+  }
+
+  .text {
+    padding-left: 1.9rem;
+    padding-right: 4rem;
+    margin-top: 1.2rem;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .main-accordion {
+    min-width: 290px;
+  }
+
+  .main-accrodion__wrapper {
+    max-width: 100%;
+    min-width: 290px;
+  }
+
+  .main-accordion__title {
+    margin-bottom: 1.7rem;
+  }
+
+  .accordion {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 1rem 5.1rem 1rem 1.5rem;
+  }
+
+  .accordion:after {
+    transform: rotate(180deg) scale(1.6);
+    right: 1.7rem;
+    top: 1.6rem;
+  }
+
+  .active:after {
+    transform: rotate(360deg) scale(1.6);
+  }
+
+  .text {
+    font-size: 14px;
+    line-height: 140%;
+
+    padding-left: 1.1rem;
+    padding-right: 3.5rem;
+    margin-top: 0;
+  }
+}
