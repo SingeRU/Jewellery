@@ -1,0 +1,34 @@
+.catalog {
+    flex: 1 1 auto;
+}
+
+.catalog-body {
+    max-width: 1190px;
+    padding: 0 10px;
+    min-width: $mobile-width;
+    margin: 0 auto;
+    margin-top: 4.9rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog-footer {
+    margin-top: 4.7rem;
+}
+
+@media(max-width: $desktop-width) {
+    .catalog-body {
+        margin-top: 3.2rem;
+        padding: 0;
+    }
+}
+
+@media(max-width: $tablet-width) {
+    .catalog-body {
+        margin-top: 2.5rem;
+    }
+
+    .catalog-footer {
+        margin-top: 3.6rem;
+    }
+}

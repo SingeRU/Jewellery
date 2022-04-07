@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jewellery</title>
+  <link rel="preload" href="fonts/CormorantGaramond-SemiBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Poppins-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="page-body main-body">
+  <svg style="display: none">
+    <symbol id="burger" width="25" height="18" viewBox="0 0 25 18">
+      <path d="M0 1H25M0 9H25M0 17H25" stroke="#1D1613" stroke-width="2"></path>
+    </symbol>
+
+    <symbol id="basket" width="20" height="18" fill="none">
+      <path d="M14 5a4 4 0 11-8 0M1 1h18v16H1V1z" stroke="#1D1613" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    </symbol>
+
+    <symbol id="circle" width="15" height="15" fill="none">
+      <circle cx="7.5" cy="7.5" r="7.5" fill="#A87B62"></circle>
+    </symbol>
+
+    <symbol id="close" width="32" height="32" fill="none">
+      <circle cx="16" cy="16" r="16" fill="#1D1613"></circle><path d="M16 14.445L21.445 9 23 10.555 17.555 16 23 21.445 21.445 23 16 17.555 10.555 23 9 21.445 14.445 16 9 10.555 10.555 9 16 14.445z" fill="#fff"></path>
+    </symbol>
+  </svg>
+  <header class="header">
+    <h1 class="visually-hidden">Шапка</h1>
+    <div class="container header-container">
+      <button class="header-burger" type="button">
+        <svg width="25" height="18" viewBox="0 0 25 18">
+          <use xlink:href="#burger"></use>
+        </svg>
+      </button>
+      <section class="header-top">
+        <div class="header-top__search">
+          <label>
+            <input class="header-top__input" type="search" placeholder="Type here to search">
+          </label>
+        </div>
+        <div class="header-top__logo">
+          <img src="img/logo.svg" alt="Logo">
+        </div>
+        <div class="header-top__options options">
+          <button class="options-login">Login</button>
+          <a href="#" class="options-cart">Cart 0</a>
+        </div>
+      </section>
+      <section class="header-bottom">
+        <ul class="header-bottom__list">
+          <li class="header-bottom__item">
+            <a class="header-bottom__link" href="#">What’s new</a>
+          </li>
+          <li class="header-bottom__item">
+            <a class="header-bottom__link" href="#">Chokers</a>
+          </li>
+          <li class="header-bottom__item">
+            <a class="header-bottom__link" href="#">Necklaces</a>
+          </li>
+          <li class="header-bottom__item">
+            <a class="header-bottom__link" href="#">Rings</a>
+          </li>
+          <li class="header-bottom__item">
+            <a class="header-bottom__link" href="#">Earrings</a>
+          </li>
+        </ul>
+      </section>
+      <button class="options-image">
+        <svg width="20" height="18" fill="none">
+          <use xlink:href="#basket"></use>
+        </svg>
+      </button>
+    </div>
+  </header>
+  <main class="catalog">
+    <section class="promo catalog-promo">
+      <div class="promo-container">
+        <h1 class="promo-title">ALL JEWELLERY</h1>
+        <p class="promo-text">Discover picks of fashion's finest trends in our jewellery catalog</p>
+      </div>
+    </section>
+    <section class="catalog-body">
+      <div class="filter opened">
+        <div class="filter-accrodion__wrapper">
+          <button class="filter-button__close">
+            <svg width="32" height="32">
+              <use xlink:href="#close"></use>
+            </svg>
+          </button>
+          <div class="filter-accordion__container">
+            <button class="accordion filter-accordion">Product</button>
+            <div class="panel filter-panel">
+              <label class="filter-label">
+                <input class="filter-input" type="checkbox" name="check" checked="">
+                <span class="filter-checkbox"></span>
+                Necklaces
+              </label>
+              <label class="filter-label">
+                <input class="filter-input" type="checkbox" name="check" checked="">
+                <span class="filter-checkbox"></span>
+                Chokers
+              </label>
+              <label class="filter-label">
+                <input class="filter-input" type="checkbox" name="check">
+                <span class="filter-checkbox"></span>
+                Rings
+              </label>
+              <label class="filter-label">
+                <input class="filter-input" type="checkbox" name="check" checked="">
+                <span class="filter-checkbox"></span>
+                Earrings
+              </label>
+            </div>
+          </div>
+          <div class="filter-accordion__container">
+            <button class="accordion filter-accordion">Material</button>
+            <div class="panel filter-panel">
+              <label class="filter-label">
+                <input class="filter-input" type="checkbox" name="check" checked="">
+                <span class="filter-checkbox"></span>
+                Gold
+              </label>
+              <label class="filter-label">
+                <input class="filter-input" type="checkbox" name="check" checked="">
+                <span class="filter-checkbox"></span>
+                Silver
+              </label>
+            </div>
+          </div>
+          <div class="filter-accordion__container">
+            <button class="accordion filter-accordion">Collection</button>
+            <div class="panel filter-panel">
+              <label class="filter-label">
+                <input class="filter-input" type="checkbox" name="check" checked="">
+                <span class="filter-checkbox"></span>
+                Pink flamingo
+              </label>
+              <label class="filter-label">
+                <input class="filter-input" type="checkbox" name="check" checked="">
+                <span class="filter-checkbox"></span>
+                Dreams
+              </label>
+            </div>
+          </div>
+          <div class="filter-accordion__container">
+            <button class="accordion filter-accordion">Price</button>
+            <div class="panel filter-range">
+              <hr>
+              <p>$ 55</p>
+              <p>$ 155</p>
+            </div>
+          </div>
+        </div>
+        <button class="filter-apply">Apply</button>
+        <button class="filter-clearall">Clear All</button>
+      </div>
+      <div class="products">
+        <button class="products-button--open">Filter</button>
+        <div class="products-wrapper">
+          <div class="products-card">
+            <img src="img/catalog-1.webp" srcset="img/catalog-1.webp 1x, img/catalog-1@2x.webp 2x" alt="Double pearl earrings " width="270" height="272">
+            <h3 class="products-card__title">Double pearl earrings</h3>
+            <p class="products-card__price">$ 115</p>
+          </div>
+          <div class="products-card">
+            <img src="img/catalog-2.webp" srcset="img/catalog-2.webp 1x, img/catalog-2@2x.webp 2x" alt="Double pearl earrings " width="270" height="272">
+            <h3 class="products-card__title">Choker with gold bead</h3>
+            <p class="products-card__price">$ 55</p>
+          </div>
+          <div class="products-card">
+            <img src="img/catalog-3.webp" srcset="img/catalog-3.webp 1x, img/catalog-3@2x.webp 2x" alt="Double pearl earrings " width="270" height="272">
+            <h3 class="products-card__title">Gold layered necklace</h3>
+            <p class="products-card__price">$ 155</p>
+          </div>
+          <div class="products-card">
+            <img src="img/catalog-4.webp" srcset="img/catalog-4.webp 1x, img/catalog-4@2x.webp 2x" alt="Double pearl earrings " width="270" height="272">
+            <h3 class="products-card__title">Blue gemstone pendant</h3>
+            <p class="products-card__price">$ 105</p>
+          </div>
+          <div class="products-card">
+            <img src="img/catalog-5.webp" srcset="img/catalog-1.webp 1x, img/catalog-5@2x.webp 2x" alt="Double pearl earrings " width="270" height="272">
+            <h3 class="products-card__title">Boho earrings</h3>
+            <p class="products-card__price">$ 75</p>
+          </div>
+          <div class="products-card">
+            <img src="img/catalog-6.webp" srcset="img/catalog-6.webp 1x, img/catalog-6@2x.webp 2x" alt="Double pearl earrings " width="270" height="272">
+            <h3 class="products-card__title">Gold bird necklace</h3>
+            <p class="products-card__price">$ 135</p>
+          </div>
+          <div class="products-card">
+            <img src="img/catalog-7.webp" srcset="img/catalog-7.webp 1x, img/catalog-7@2x.webp 2x" alt="Double pearl earrings " width="270" height="272">
+            <h3 class="products-card__title">Black leather choker</h3>
+            <p class="products-card__price">$ 85</p>
+          </div>
+          <div class="products-card">
+            <img src="img/catalog-8.webp" srcset="img/catalog-8.webp 1x, img/catalog-8@2x.webp 2x" alt="Double pearl earrings " width="270" height="272">
+            <h3 class="products-card__title">Necklace with amethyst</h3>
+            <p class="products-card__price">$ 145</p>
+          </div>
+          <div class="products-card">
+            <img src="img/catalog-9.webp" srcset="img/catalog-9.webp 1x, img/catalog-9@2x.webp 2x" alt="Double pearl earrings " width="270" height="272">
+            <h3 class="products-card__title">Elephant earrings</h3>
+            <p class="products-card__price">$ 95</p>
+          </div>
+          <div class="products-card">
+            <img src="img/catalog-10.webp" srcset="img/catalog-10.webp 1x, img/catalog-10@2x.webp 2x" alt="Double pearl earrings " width="270" height="272">
+            <h3 class="products-card__title">Threader necklace</h3>
+            <p class="products-card__price">$ 115</p>
+          </div>
+          <div class="products-card">
+            <img src="img/catalog-11.webp" srcset="img/catalog-11.webp 1x, img/catalog-11@2x.webp 2x" alt="Double pearl earrings " width="270" height="272">
+            <h3 class="products-card__title">Origami crane necklace</h3>
+            <p class="products-card__price">$ 105</p>
+          </div>
+          <div class="products-card">
+            <img src="img/catalog-12.webp" srcset="img/catalog-12.webp 1x, img/catalog-12@2x.webp 2x" alt="Double pearl earrings " width="270" height="272">
+            <h3 class="products-card__title">Marble earrings</h3>
+            <p class="products-card__price">$ 95</p>
+          </div>
+        </div>
+        <div class="products-pagination">
+          <button class="products-pagination__prev">Previous</button>
+          <div class="products-pagination__container">
+            <p class="page">1</p>
+            <p class="page">2</p>
+            <p class="page">3</p>
+            <p class="page">4</p>
+            <p class="page">5</p>
+          </div>
+          <button class="products-pagination__next">Next</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer catalog-footer">
+    <h1 class="visually-hidden">Футер</h1>
+    <div class="container footer-container">
+      <section class="singup">
+        <h2 class="singup-title">The good stuff in your inbox </h2>
+        <p class="singup-text">News and updates from CH. No spam, we promise.</p>
+        <div class="singup-field">
+          <label>
+            <input class="singup-input" type="email" placeholder="Your E-mail">
+          </label>
+          <a class="signup-button">Sign Up</a>
+        </div>
+      </section>
+      <section class="functions">
+        <ul class="functions-list">
+          <li class="functions-list__item">
+            <a class="functions-list__link" href="">
+              Ordering & Payment
+            </a>
+          </li>
+          <li class="functions-list__item">
+            <a class="functions-list__link" href="">
+              Terms & Conditions
+            </a>
+          </li>
+          <li class="functions-list__item">
+            <a class="functions-list__link" href="">
+              Returns & Exchanges
+            </a>
+          </li>
+          <li class="functions-list__item">
+            <a class="functions-list__link" href="">
+              Delivery
+            </a>
+          </li>
+          <li class="functions-list__item">
+            <a class="functions-list__link" href="">
+              About CH
+            </a>
+          </li>
+          <li class="functions-list__item">
+            <a class="functions-list__link" href="">
+              Stores & Hours
+            </a>
+          </li>
+          <li class="functions-list__item">
+            <a class="functions-list__link" href="">
+              Jobs
+            </a>
+          </li>
+          <li class="functions-list__item">
+            <a class="functions-list__link" href="">
+              Contact Us
+            </a>
+          </li>
+        </ul>
+        </section>
+      <section class="socials">
+        <ul class="socials-list">
+          <li class="socials-list__item">
+            <a href="#" class="socails-list__link socails-list__link--facebook"><span>Facebook</span></a>
+          </li>
+          <li class="socials-list__item">
+            <a href="#" class="socails-list__link socails-list__link--instagram"><span>Instagram</span></a>
+          </li>
+          <li class="socials-list__item">
+            <a href="#" class="socails-list__link socails-list__link--pinterest"><span>Pinterest</span></a>
+          </li>
+          <li class="socials-list__item">
+            <a href="#" class="socails-list__link socails-list__link--twitter"><span>Twitter</span></a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body></html>

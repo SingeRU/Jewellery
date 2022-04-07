@@ -1,0 +1,110 @@
+.catalog-promo {
+    margin-top: 1.2rem;
+}
+
+.catalog-promo .promo-container {
+    max-width: 1366px;
+    min-width: $mobile-width;
+    margin: 0 auto;
+    padding-top: 5.8rem;
+    padding-bottom: 4.5rem;
+
+    background: url("../../img/catalog-bg.webp");
+    background-size: cover;
+    background-position: center;
+
+    @media(min-resolution: 2dppx) {
+        background: url("../../img/catalog-bg.webp@2x.webp");
+        background-position: center;
+        background-size: cover;
+    }
+
+    text-align: center;
+    color: $white;
+}
+
+.catalog-promo .promo-title {
+    font-family: "Cormorant";
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 130%;
+    margin-top: 0;
+    letter-spacing: 0;
+    margin-bottom: 0;
+}
+
+
+.catalog-promo .promo-text {
+    font-family: "Cormorant";
+    font-style: italic;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 130%;
+    margin-top: 0.2rem;
+}
+  
+  
+@media (max-width: $desktop-width) {
+    .promo {
+        margin-top: 1.7rem;
+    }
+
+    .catalog-promo .promo-container {
+      max-width: 100%;
+
+      background: url("../../img/catalog-bg-tab.webp");
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      @media(min-resolution: 2dppx) {
+            background: url("../../img/catalog-bg-tab@2x.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+  
+    }
+
+    .catalog-promo .promo-text {
+        margin-top: 0.08rem;
+    }
+}
+  
+@media (max-width: $tablet-width) {
+    .promo {
+        margin-top: 0.6rem;
+    }
+
+    .catalog-promo .promo-container {
+        padding-top: 4.7rem;
+        padding-bottom: 5.2rem;
+        background: url("../../img/catalog-bg-mob.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        @media(min-resolution: 2dppx) {
+            background: url("../../img/catalog-bg-mob@2x.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+  
+    }
+
+    .catalog-promo .promo-container .promo-title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 49px;
+        letter-spacing: 0.07rem;
+    }
+    
+    
+    .catalog-promo .promo-container .promo-text {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 120%;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0 2rem;
+    }
+}
+
+  
