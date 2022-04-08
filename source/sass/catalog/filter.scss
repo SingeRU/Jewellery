@@ -172,7 +172,7 @@
     height: 68px;
     background-color: $white;
     border: 1px solid $brown;
-    color: $brown;
+    color: $dark;
     margin-top: 25px;
     transition: 0.3s ease-in;
     cursor: pointer;
@@ -229,7 +229,7 @@
         max-width: 442px;
     }
 
-    .active + .filter-panel {
+    .active + .filter-range {
         min-height: 140px;
         margin-bottom: 2rem;
     }
@@ -306,5 +306,91 @@
     .filter-clearall {
         width: 55%;
         max-width: 442px;
+    }
+}
+
+@media(max-width: $tablet-width) {
+    .opened {
+        padding-top: 4.3rem;
+    }
+
+    .opened .filter-accordion {
+        padding: 1.9rem 1.4rem 1rem;
+    }
+
+    .filter-accrodion__wrapper {
+        max-width: 100%;
+        width: 100%;
+        padding: 0 1.4rem;
+    }
+
+    .filter-accordion:after {
+        right: 1.7rem;
+    }
+    
+    .filter-button__close {
+        top: 7.7%;
+        right: 4.7%;
+    }
+
+    .active + .filter-panel {
+        margin-top: 0.5rem;
+        margin-bottom: 1.3rem;
+    }
+
+    .active+.filter-range {
+        min-height: 75px;
+        margin-bottom: 0rem;
+    }
+
+    .active + .filter-range hr {
+        top: 27px;
+    }
+
+    .active+.filter-range hr::after {
+        left: 37px;
+        width: 63%;
+    }
+
+    .active+.filter-range::after, 
+    .active+.filter-range::before {
+        top: 19px;
+    }
+    
+
+    .active+.filter-range::before {
+        left: 191px;
+    }
+
+    .active+.filter-range::after {
+        left: 53px;
+    }
+
+    .filter-panel label {
+        padding-left: 2.8rem;
+    }
+
+    .active+.filter-range p:nth-child(n) {
+        top: 30px;
+        left: 181px;
+        font-style: 16px;
+    }
+
+    .active+.filter-range p:nth-child(2n) {
+        left: 45px;
+    }
+
+    .filter-apply, .filter-clearall {
+        width: 72%;
+        margin: 0 auto;
+        max-width: 100%;   
+    }
+
+    .filter-apply {
+        margin-top: 2.1rem;
+    }
+
+    .filter-clearall {
+        margin-top: 1.3rem;
     }
 }
