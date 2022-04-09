@@ -7,10 +7,9 @@
   <title>Jewellery</title>
   <link rel="preload" href="fonts/CormorantGaramond-SemiBold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Poppins-Regular.woff2" as="font" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="page-body catalog-body">
+<body class="page-body">
   <svg style="display: none">
     <symbol id="burger" width="25" height="18" viewBox="0 0 25 18">
       <path d="M0 1H25M0 9H25M0 17H25" stroke="#1D1613" stroke-width="2"/>
@@ -31,26 +30,28 @@
   <header class="header">
     <h1 class="visually-hidden">Шапка</h1>
     <div class="container header-container">
-      <button class="header-burger" type="button">
+      <button class="header-burger" type="button" aria-label="Burger">
         <svg width="25" height="18" viewBox="0 0 25 18">
           <use xlink:href="#burger"></use>
         </svg>
       </button>
       <section class="header-top">
+        <h2 class="visually-hidden">Header-top</h2>
         <div class="header-top__search">
           <label>
             <input class="header-top__input" type="search" placeholder="Type here to search">
           </label>
         </div>
         <div class="header-top__logo">
-          <img src="img/logo.svg" alt="Logo">
+          <img src="img/logo.svg" alt="Logo" width=66 height=66>
         </div>
         <div class="header-top__options options">
-          <button class="options-login">Login</button>
+          <button class="options-login" aria-label="Login">Login</button>
           <a href="#" class="options-cart">Cart 0</a>
         </div>
       </section>
       <section class="header-bottom">
+        <h2 class="visually-hidden">Header-bottom</h2>
         <ul class="header-bottom__list">
           <li class="header-bottom__item">
             <a class="header-bottom__link" href="#">What’s new</a>
@@ -69,7 +70,7 @@
           </li>
         </ul>
       </section>
-      <button class="options-image">
+      <button class="options-image" aria-label="Options">
         <svg width="20" height="18" fill="none">
           <use xlink:href="#basket"></use>
         </svg>
@@ -79,20 +80,20 @@
   <main class="catalog">
     <section class="promo catalog-promo">
       <div class="promo-container">
-        <h1 class="promo-title">ALL JEWELLERY</h1>
+        <h2 class="promo-title">ALL JEWELLERY</h2>
         <p class="promo-text">Discover picks of fashion's finest trends in our jewellery catalog</p>
       </div>
     </section>
     <section class="catalog-body">
       <div class="filter">
-        <div class="filter-accrodion__wrapper">
-          <button class="filter-button__close">
+        <div class="filter-wrapper">
+          <button class="filter-close" aria-label="Button Close">
             <svg width="32" height="32">
               <use xlink:href="#close"></use>
             </svg>
           </button>
-          <div class="filter-accordion__container">
-            <button class="accordion filter-accordion">Product</button>
+          <div class="filter-container">
+            <button class="accordion filter-accordion" aria-label="Accordion Button">Product</button>
             <div class="panel filter-panel">
               <label class="filter-label">
                 <input class="filter-input" type="checkbox" name="check" checked>
@@ -116,8 +117,8 @@
               </label>
             </div>
           </div>
-          <div class="filter-accordion__container">
-            <button class="accordion filter-accordion">Material</button>
+          <div class="filter-container">
+            <button class="accordion filter-accordion" aria-label="Accordion Button">Material</button>
             <div class="panel filter-panel">
               <label class="filter-label">
                 <input class="filter-input" type="checkbox" name="check" checked>
@@ -131,8 +132,8 @@
               </label>
             </div>
           </div>
-          <div class="filter-accordion__container">
-            <button class="accordion filter-accordion">Collection</button>
+          <div class="filter-container">
+            <button class="accordion filter-accordion" aria-label="Accordion Button">Collection</button>
             <div class="panel filter-panel">
               <label class="filter-label">
                 <input class="filter-input" type="checkbox" name="check" checked>
@@ -146,8 +147,8 @@
               </label>
             </div>
           </div>
-          <div class="filter-accordion__container">
-            <button class="accordion filter-accordion">Price</button>
+          <div class="filter-container">
+            <button class="accordion filter-accordion" aria-label="Accordion Button">Price</button>
             <div class="panel filter-range">
               <hr>
               <p>$ 55</p>
@@ -155,75 +156,75 @@
             </div>
           </div>
         </div>
-        <button class="filter-apply">Apply</button>
-        <button class="filter-clearall">Clear All</button>
+        <button class="filter-apply" aria-label="Button Apply">Apply</button>
+        <button class="filter-clearall" aria-label="Button Clear All">Clear All</button>
       </div>
       <div class="products">
-        <button class="products-button--open">Filter</button>
+        <button class="products-open" aria-label="Button Filter">Filter</button>
         <div class="products-wrapper">
           <div class="products-card">
-            <img src="img/catalog-1.webp" srcset="img/catalog-1.webp 1x, img/catalog-1@2x.webp 2x" alt="Double pearl earrings " width="270" height="272">
+            <img src="img/catalog-1.webp" srcset="img/catalog-1.webp 1x, img/catalog-1@2x.webp 2x" alt="Double pearl earrings" width="270" height="272">
             <h3 class="products-card__title">Double pearl earrings</h3>
             <p class="products-card__price">$ 115</p>
           </div>
           <div class="products-card">
-            <img src="img/catalog-2.webp" srcset="img/catalog-2.webp 1x, img/catalog-2@2x.webp 2x" alt="Double pearl earrings " width="270" height="272">
+            <img src="img/catalog-2.webp" srcset="img/catalog-2.webp 1x, img/catalog-2@2x.webp 2x" alt="Choker with gold bead" width="270" height="272">
             <h3 class="products-card__title">Choker with gold bead</h3>
             <p class="products-card__price">$ 55</p>
           </div>
           <div class="products-card">
-            <img src="img/catalog-3.webp" srcset="img/catalog-3.webp 1x, img/catalog-3@2x.webp 2x" alt="Double pearl earrings " width="270" height="272">
+            <img src="img/catalog-3.webp" srcset="img/catalog-3.webp 1x, img/catalog-3@2x.webp 2x" alt="Gold layered necklace" width="270" height="272">
             <h3 class="products-card__title">Gold layered necklace</h3>
             <p class="products-card__price">$ 155</p>
           </div>
           <div class="products-card">
-            <img src="img/catalog-4.webp" srcset="img/catalog-4.webp 1x, img/catalog-4@2x.webp 2x" alt="Double pearl earrings " width="270" height="272">
+            <img src="img/catalog-4.webp" srcset="img/catalog-4.webp 1x, img/catalog-4@2x.webp 2x" alt="Blue gemstone pendant" width="270" height="272">
             <h3 class="products-card__title">Blue gemstone pendant</h3>
             <p class="products-card__price">$ 105</p>
           </div>
           <div class="products-card">
-            <img src="img/catalog-5.webp" srcset="img/catalog-1.webp 1x, img/catalog-5@2x.webp 2x" alt="Double pearl earrings " width="270" height="272">
+            <img src="img/catalog-5.webp" srcset="img/catalog-1.webp 1x, img/catalog-5@2x.webp 2x" alt="Boho earrings" width="270" height="272">
             <h3 class="products-card__title">Boho earrings</h3>
             <p class="products-card__price">$ 75</p>
           </div>
           <div class="products-card">
-            <img src="img/catalog-6.webp" srcset="img/catalog-6.webp 1x, img/catalog-6@2x.webp 2x" alt="Double pearl earrings " width="270" height="272">
+            <img src="img/catalog-6.webp" srcset="img/catalog-6.webp 1x, img/catalog-6@2x.webp 2x" alt="Gold bird necklace" width="270" height="272">
             <h3 class="products-card__title">Gold bird necklace</h3>
             <p class="products-card__price">$ 135</p>
           </div>
           <div class="products-card">
-            <img src="img/catalog-7.webp" srcset="img/catalog-7.webp 1x, img/catalog-7@2x.webp 2x" alt="Double pearl earrings " width="270" height="272">
+            <img src="img/catalog-7.webp" srcset="img/catalog-7.webp 1x, img/catalog-7@2x.webp 2x" alt="Black leather choker" width="270" height="272">
             <h3 class="products-card__title">Black leather choker</h3>
             <p class="products-card__price">$ 85</p>
           </div>
           <div class="products-card">
-            <img src="img/catalog-8.webp" srcset="img/catalog-8.webp 1x, img/catalog-8@2x.webp 2x" alt="Double pearl earrings " width="270" height="272">
+            <img src="img/catalog-8.webp" srcset="img/catalog-8.webp 1x, img/catalog-8@2x.webp 2x" alt="Necklace with amethyst" width="270" height="272">
             <h3 class="products-card__title">Necklace with amethyst</h3>
             <p class="products-card__price">$ 145</p>
           </div>
           <div class="products-card">
-            <img src="img/catalog-9.webp" srcset="img/catalog-9.webp 1x, img/catalog-9@2x.webp 2x" alt="Double pearl earrings " width="270" height="272">
+            <img src="img/catalog-9.webp" srcset="img/catalog-9.webp 1x, img/catalog-9@2x.webp 2x" alt="Elephant earrings" width="270" height="272">
             <h3 class="products-card__title">Elephant earrings</h3>
             <p class="products-card__price">$ 95</p>
           </div>
           <div class="products-card">
-            <img src="img/catalog-10.webp" srcset="img/catalog-10.webp 1x, img/catalog-10@2x.webp 2x" alt="Double pearl earrings " width="270" height="272">
+            <img src="img/catalog-10.webp" srcset="img/catalog-10.webp 1x, img/catalog-10@2x.webp 2x" alt="Threader necklace" width="270" height="272">
             <h3 class="products-card__title">Threader necklace</h3>
             <p class="products-card__price">$ 115</p>
           </div>
           <div class="products-card">
-            <img src="img/catalog-11.webp" srcset="img/catalog-11.webp 1x, img/catalog-11@2x.webp 2x" alt="Double pearl earrings " width="270" height="272">
+            <img src="img/catalog-11.webp" srcset="img/catalog-11.webp 1x, img/catalog-11@2x.webp 2x" alt="Origami crane necklace" width="270" height="272">
             <h3 class="products-card__title">Origami crane necklace</h3>
             <p class="products-card__price">$ 105</p>
           </div>
           <div class="products-card">
-            <img src="img/catalog-12.webp" srcset="img/catalog-12.webp 1x, img/catalog-12@2x.webp 2x" alt="Double pearl earrings " width="270" height="272">
+            <img src="img/catalog-12.webp" srcset="img/catalog-12.webp 1x, img/catalog-12@2x.webp 2x" alt="Marble earrings" width="270" height="272">
             <h3 class="products-card__title">Marble earrings</h3>
             <p class="products-card__price">$ 95</p>
           </div>
         </div>
         <div class="products-pagination">
-          <button class="products-pagination__prev">Previous</button>
+          <button class="products-pagination__prev" aria-label="Button Previous">Previous</button>
           <div class="products-pagination__container">
             <p class="page">1</p>
             <p class="page">2</p>
@@ -231,7 +232,7 @@
             <p class="page">4</p>
             <p class="page">5</p>
           </div>
-          <button class="products-pagination__next">Next</button>
+          <button class="products-pagination__next" aria-label="Button Next">Next</button>
         </div>
       </div>
     </section>
@@ -246,71 +247,72 @@
           <label>
             <input class="singup-input" type="email" placeholder="Your E-mail">
           </label>
-          <a class="signup-button">Sign Up</a>
+          <a class="signup-button" href="#">Sign Up</a>
         </div>
       </section>
       <section class="functions">
+        <h2 class="visually-hidden">Functions</h2>
         <ul class="functions-list">
           <li class="functions-list__item">
-            <a class="functions-list__link" href="">
+            <a class="functions-list__link" href="#">
               Ordering & Payment
             </a>
           </li>
           <li class="functions-list__item">
-            <a class="functions-list__link" href="">
+            <a class="functions-list__link" href="#">
               Terms & Conditions
             </a>
           </li>
           <li class="functions-list__item">
-            <a class="functions-list__link" href="">
+            <a class="functions-list__link" href="#">
               Returns & Exchanges
             </a>
           </li>
           <li class="functions-list__item">
-            <a class="functions-list__link" href="">
+            <a class="functions-list__link" href="#">
               Delivery
             </a>
           </li>
           <li class="functions-list__item">
-            <a class="functions-list__link" href="">
+            <a class="functions-list__link" href="#">
               About CH
             </a>
           </li>
           <li class="functions-list__item">
-            <a class="functions-list__link" href="">
+            <a class="functions-list__link" href="#">
               Stores & Hours
             </a>
           </li>
           <li class="functions-list__item">
-            <a class="functions-list__link" href="">
+            <a class="functions-list__link" href="#">
               Jobs
             </a>
           </li>
           <li class="functions-list__item">
-            <a class="functions-list__link" href="">
+            <a class="functions-list__link" href="#">
               Contact Us
             </a>
           </li>
         </ul>
         </section>
       <section class="socials">
+        <h2 class="visually-hidden">Socials</h2>
         <ul class="socials-list">
           <li class="socials-list__item">
-            <a href="#" class="socails-list__link socails-list__link--facebook"><span>Facebook</span></a>
+            <a href="#" class="socials-list__link facebook"><span>Facebook</span></a>
           </li>
           <li class="socials-list__item">
-            <a href="#" class="socails-list__link socails-list__link--instagram"><span>Instagram</span></a>
+            <a href="#" class="socials-list__link instagram"><span>Instagram</span></a>
           </li>
           <li class="socials-list__item">
-            <a href="#" class="socails-list__link socails-list__link--pinterest"><span>Pinterest</span></a>
+            <a href="#" class="socials-list__link pinterest"><span>Pinterest</span></a>
           </li>
           <li class="socials-list__item">
-            <a href="#" class="socails-list__link socails-list__link--twitter"><span>Twitter</span></a>
+            <a href="#" class="socials-list__link twitter"><span>Twitter</span></a>
           </li>
         </ul>
       </section>
     </div>
   </footer>
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>

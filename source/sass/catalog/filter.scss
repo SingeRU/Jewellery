@@ -4,16 +4,16 @@
     flex-direction: column;
 }
 
-.filter-button__close {
+.filter-close {
     display: none;
 }
 
-.filter-accordion__container {
+.filter-container {
     position: relative;
     border-bottom: 1px solid $brown;
 }
 
-.filter-accrodion__wrapper {
+.filter-wrapper {
     border-top: 1px solid $brown;
     border-left: 1px solid $brown;
     border-right: 1px solid $brown;
@@ -199,7 +199,7 @@
         overflow: hidden;
     }
 
-    .filter-button__close {
+    .filter-close {
         display: block;
         width: 32px;
         height: 32px;
@@ -223,7 +223,7 @@
         top: 2.5rem;
     }
 
-    .filter-accrodion__wrapper {
+    .filter-wrapper {
         border: none;
         width: 55%;
         max-width: 442px;
@@ -318,7 +318,7 @@
         padding: 1.9rem 1.4rem 1rem;
     }
 
-    .filter-accrodion__wrapper {
+    .filter-wrapper {
         max-width: 100%;
         width: 100%;
         padding: 0 1.4rem;
@@ -328,7 +328,7 @@
         right: 1.7rem;
     }
     
-    .filter-button__close {
+    .filter-close {
         top: 7.7%;
         right: 4.7%;
     }
