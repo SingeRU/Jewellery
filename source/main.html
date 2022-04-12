@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="page-body main-body">
+<body class="page-body">
   <svg style="display: none">
     <symbol id="burger" width="25" height="18" viewBox="0 0 25 18">
       <path d="M0 1H25M0 9H25M0 17H25" stroke="#1D1613" stroke-width="2"/>
@@ -18,6 +18,10 @@
 
     <symbol id="basket" width="20" height="18" fill="none">
       <path d="M14 5a4 4 0 11-8 0M1 1h18v16H1V1z" stroke="#1D1613" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="popupClose" width="20" height="20" fill="none">
+      <path d="M10 7.778L17.778 0 20 2.222 12.222 10 20 17.778 17.778 20 10 12.222 2.222 20 0 17.778 7.778 10 0 2.222 2.222 0 10 7.778z" fill="#1D1613"/>
     </symbol>
   </svg>
   <header class="header">
@@ -39,7 +43,7 @@
           <img src="img/logo.svg" alt="Logo" width=66 height=66>
         </div>
         <div class="header-top__options options">
-          <button class="options-login" aria-label="Login">Login</button>
+          <a href="login.html" class="options-login" aria-label="Login">Login</a>
           <a href="#" class="options-cart">Cart 0</a>
         </div>
       </section>
@@ -80,60 +84,58 @@
     <section class="slider container">
       <h2 class="slider-title">New In</h2>
       <a class="slider-link" href="#">Shop Now</a>
-      <div class="swiper-button-prev" aria-label="Button Prev"></div>
-      <div class="swiper-button-next" aria-label="Button Next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
       <div class="image-slider swiper">
-        
-
         <div class="image-slider__wrapper swiper-wrapper">
           <div class="image-slider__slide swiper-slide">
             <div class="image-slider__image">
               <img src="img/necklace.webp" alt="Амулет" width=270 height=284>
               <h3 class="image-slider__title">Necklace with amethyst</h3>
               <p class="image-slider__text">$ 145</p>
-            </div>  
+            </div>
           </div>
           <div class="image-slider__slide swiper-slide">
             <div class="image-slider__image">
               <img src="img/choker.webp" alt="Чокер" width=270 height=284>
               <h3 class="image-slider__title">Layered сhoker</h3>
               <p class="image-slider__text">$ 115</p>
-            </div>  
+            </div>
           </div>
           <div class="image-slider__slide swiper-slide">
             <div class="image-slider__image">
               <img src="img/gold-necklace.webp" alt="Цепочка" width=270 height=284>
               <h3 class="image-slider__title">Gold chain</h3>
               <p class="image-slider__text">$ 215</p>
-            </div>  
+            </div>
           </div>
           <div class="image-slider__slide swiper-slide">
             <div class="image-slider__image">
               <img src="img/earrings.webp" alt="Сережки" width=270 height=284>
               <h3 class="image-slider__title">Galaxy earrings</h3>
               <p class="image-slider__text">$ 95</p>
-            </div>  
+            </div>
           </div>
           <div class="image-slider__slide swiper-slide">
             <div class="image-slider__image">
               <img src="img/necklace.webp" alt="Амулет" width=270 height=284>
               <h3 class="image-slider__title">Necklace with amethyst</h3>
               <p class="image-slider__text">$ 145</p>
-            </div>  
+            </div>
           </div>
           <div class="image-slider__slide swiper-slide">
             <div class="image-slider__image">
               <img src="img/choker.webp" alt="Чокер" width=270 height=284>
               <h3 class="image-slider__title">Layered сhoker</h3>
               <p class="image-slider__text">$ 115</p>
-            </div>  
+            </div>
           </div>
           <div class="image-slider__slide swiper-slide">
             <div class="image-slider__image">
               <img src="img/gold-necklace.webp" alt="Цепочка" width=270 height=284>
               <h3 class="image-slider__title">Gold chain</h3>
               <p class="image-slider__text">$ 215</p>
-            </div>  
+            </div>
           </div>
         </div>
         <div class="image-pagination swiper-pagination">
@@ -310,8 +312,38 @@
       </section>
     </div>
   </footer>
+  <div class="login login--closed">
+    <div class="login-logo">
+      <img src="img/logo.svg" alt="Logo">
+    </div>
+    <form class="login-form" action="https://echo.htmlacademy.ru/" autocomplete="off">
+      <button class="login-close" type="button" aria-label="Close">
+        <svg width="20" height="20" fill="none">
+          <use xlink:href="#popupClose"></use>
+        </svg>
+      </button>
+      <div class="login-image"></div>
+      <h1 class="login-title">Log In</h1>
+      <fieldset class="login-fieldset">
+        <div class="login-fields">
+          <label>
+            <input class="login-input email" type="email" name="email" placeholder="Your E-mail" required>
+          </label>
+          <label>
+            <input class="login-input password" type="text" name="password" placeholder="Password" required>
+          </label>
+          <a href="#" class="login-forgot">Forgot your password?</a>
+        </div>
+        <button class="login-button" type="submit" aria-label="Submit">Log In</button>
+        <div class="login-account">
+          <p class="login-account__text">Don’t have an account?</p>
+          <a href="#" class="login-account__link">Sign up</a>
+        </div>
+      </fieldset>
+    </form>
+  </div>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script src="js/vendor.js"></script>
+  <script src="js/vendor.js" type="module"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

@@ -13,7 +13,7 @@
     transform: rotate(180deg);
 }
 
-.swiper-button-prev, 
+.swiper-button-prev,
 .swiper-button-next {
     top: 47px;
 }
@@ -121,12 +121,12 @@
     .slider {
         margin-top: 4.4rem;
     }
-    
+
     .slider-title {
         margin-bottom: 1.2rem;
     }
 
-    .swiper-button-next, 
+    .swiper-button-next,
     .swiper-button-prev {
         top: 50px;
         transform: scale(1.4);
@@ -148,7 +148,7 @@
     .image-slider__image img {
         min-width: 324px;
     }
-    
+
     .image-slider__title {
         margin-top: 0.9rem;
     }
@@ -160,7 +160,7 @@
 }
 
 @media (max-width: $tablet-width) {
-    .swiper-button-next, 
+    .swiper-button-next,
     .swiper-button-prev {
         display: none;
     }

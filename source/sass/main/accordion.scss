@@ -39,7 +39,7 @@
   padding-bottom: 2.8rem;
   width: 100%;
   border: none;
-  
+
   position: relative;
 
   text-align: left;
@@ -66,14 +66,14 @@
 }
 
 .active:after {
-	transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 .panel {
-	padding: 0 18px;
-	background-color: $white;
-	max-height: 0;
-	overflow: hidden;
+  padding: 0 18px;
+  background-color: $white;
+  max-height: 0;
+  overflow: hidden;
 }
 
 .text {
@@ -88,7 +88,7 @@
   .main-accordion {
     margin-top: 4.4rem;
   }
-  
+
   .main-accrodion-wrapper {
     max-width: 88%;
   }

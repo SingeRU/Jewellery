@@ -42,8 +42,7 @@
     line-height: 130%;
     margin-top: 0.2rem;
 }
-  
-  
+
 @media (max-width: $desktop-width) {
     .promo {
         margin-top: 1.7rem;
@@ -61,14 +60,13 @@
             background-size: cover;
             background-repeat: no-repeat;
         }
-  
     }
 
     .catalog-promo .promo-text {
         margin-top: 0.08rem;
     }
 }
-  
+
 @media (max-width: $tablet-width) {
     .promo {
         margin-top: 0.6rem;
@@ -86,7 +84,6 @@
             background-size: cover;
             background-repeat: no-repeat;
         }
-  
     }
 
     .catalog-promo .promo-container .promo-title {
@@ -95,8 +92,7 @@
         line-height: 49px;
         letter-spacing: 0.07rem;
     }
-    
-    
+
     .catalog-promo .promo-container .promo-text {
         font-weight: 400;
         font-size: 22px;
@@ -106,5 +102,3 @@
         padding: 0 2rem;
     }
 }
-
-  

@@ -80,6 +80,8 @@
     margin-right: 2.7rem;
     cursor: pointer;
     position: relative;
+    color: $white;
+    text-decoration: none;
 
     &::after {
         content: "";

@@ -1,0 +1,245 @@
+.login {
+    text-align: center;
+    width: 430px;
+    margin: 0 auto;
+}
+
+.login--opened {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translate(50%,0);
+    right: 50%;
+    overflow: hidden;
+}
+
+.login--opened .login-logo {
+    display: none;
+}
+
+.login--opened .login-form {
+    margin-top: 0;
+    width: 430px;
+    height: 586px;
+    margin: 0 auto;
+}
+
+.login--closed {
+    display: none;
+}
+
+.login-form {
+    position: relative;
+    margin-top: 1.8rem;
+    min-height: 586px;
+    background-color: $background-grey;
+}
+
+.login-close {
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: inherit;
+    border: none;
+    padding: 0;
+    top: 17px;
+    right: 37px;
+
+    cursor: pointer;
+}
+
+.login-close svg {
+    transform: scale(0.7);
+}
+
+.login-image {
+    min-height: 138px;
+    background: url("../../img/popup-header.webp");
+    background-size: cover;
+    background-position: center;
+
+    @media(min-resolution: 2dppx) {
+        background: url("../../img/popup-header@2x.webp");
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+.login-title {
+    margin-top: 3.2rem;
+
+    font-family: "Cormorant";
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 130%;
+    color: $dark;
+
+}
+
+.login-fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.login-fields {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    position: relative;
+}
+
+.login-input {
+    border: none;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: $dark;
+    border-bottom: 1px solid $dark;
+    background-color: $background-grey;
+
+    &::placeholder {
+        color: $grey;
+    }
+
+    width: 79.9%;
+    height: 40px;
+}
+
+.login-forgot {
+    position: absolute;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: $grey;
+    text-decoration: none;
+    transition: 0.3s;
+
+    right: 46px;
+    bottom: -23px;
+}
+
+.login-forgot:hover {
+    color: $dark;
+}
+
+.login-button {
+    background: $brown;
+    border: 1px solid $brown;
+
+    width: 79.5%;
+    height: 68px;
+    font-family: "Poppins";
+    font-size: 16px;
+    line-height: 130%;
+    color: $white;
+
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 4.25rem;
+}
+
+.login-button:hover {
+    opacity: 0.7;
+}
+
+.login-account {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.login-account__text {
+    margin: 0;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: $grey;
+    margin-right: 0.9rem;
+}
+
+.login-account__link {
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: $dark;
+    text-decoration: none;
+    position: relative;
+    transition: 0.3s;
+    right: 5px;
+}
+
+.login-account__link:hover {
+    color: $brown
+}
+
+@media(max-width: $desktop-width) {
+    .login {
+        width: 442px;
+    }
+
+    .login--opened .login-form {
+        width: 442px;
+    }
+}
+
+@media(max-width: $tablet-width) {
+    .login {
+        width: 270px;
+        height: 470px;
+    }
+
+    .login--opened .login-form {
+        width: 270px;
+        height: 470px;
+    }
+
+    .login-image {
+        min-height: 84px;
+        background: url("../../img/popup-header.webp");
+        background-size: cover;
+        background-position: center;
+
+        @media(min-resolution: 2dppx) {
+            background: url("../../img/popup-header@2x.webp");
+            background-position: center;
+            background-size: cover;
+        }
+    }
+
+    .login-title {
+        font-size: 24px;
+        margin-top: 2.3rem;
+    }
+
+    .login-fields {
+        row-gap: 21px;
+    }
+
+    .login-input {
+        width: 88.9%;
+        height: 40px;
+    }
+
+    .login-forgot {
+        right: 15px;
+        bottom: -22px;
+    }
+
+    .login-button {
+        margin-top: 3.55rem;
+        width: 89%;
+    }
+
+    .login-account__text {
+        margin-right: 0.3rem;
+    }
+
+    .login-account__link {
+        right: 0;
+    }
+}
