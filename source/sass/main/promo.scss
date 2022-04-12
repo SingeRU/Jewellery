@@ -10,12 +10,12 @@
     padding-top: 11.5rem;
     padding-bottom: 9.1rem;
 
-    background: url("../../img/main-background.webp");
+    background: url("../img/main-background.webp");
     background-size: cover;
     background-position: center;
 
     @media(min-resolution: 2dppx) {
-        background: url("../../img/main-background@2x.webp");
+        background: url("../img/main-background@2x.webp");
         background-position: center;
         background-size: cover;
     }
@@ -52,12 +52,12 @@
     .promo-container {
       max-width: 100%;
 
-      background: url("../../img/main-background-tab.webp");
+      background: url("../img/main-background-tab.webp");
       background-size: cover;
       background-repeat: no-repeat;
 
       @media(min-resolution: 2dppx) {
-            background: url("../../img/main-background-tab@2x.webp");
+            background: url("../img/main-background-tab@2x.webp");
             background-size: cover;
             background-repeat: no-repeat;
         }
@@ -73,12 +73,12 @@
     .promo-container {
         padding-top: 11.8rem;
         padding-bottom: 12.1rem;
-        background: url("../../img/main-background-mob.webp");
+        background: url("../img/main-background-mob.webp");
         background-size: cover;
         background-repeat: no-repeat;
 
         @media(min-resolution: 2dppx) {
-            background: url("../../img/main-background-mob@2x.webp");
+            background: url("../img/main-background-mob@2x.webp");
             background-size: cover;
             background-repeat: no-repeat;
         }

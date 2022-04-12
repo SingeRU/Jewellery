@@ -1,13 +1,13 @@
 .swiper-button-prev:after {
     content: "";
-    background: url('../../img/arrow.svg');
+    background: url('../img/arrow.svg');
     width: 29px;
     height: 9px;
 }
 
 .swiper-button-next:after{
     content: "";
-    background: url('../../img/arrow.svg');
+    background: url('../img/arrow.svg');
     width: 29px;
     height: 10px;
     transform: rotate(180deg);

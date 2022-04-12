@@ -54,12 +54,12 @@
 
 .login-image {
     min-height: 138px;
-    background: url("../../img/popup-header.webp");
+    background: url("../img/popup-header.webp");
     background-size: cover;
     background-position: center;
 
     @media(min-resolution: 2dppx) {
-        background: url("../../img/popup-header@2x.webp");
+        background: url("../img/popup-header@2x.webp");
         background-position: center;
         background-size: cover;
     }
@@ -200,15 +200,6 @@
 
     .login-image {
         min-height: 84px;
-        background: url("../../img/popup-header.webp");
-        background-size: cover;
-        background-position: center;
-
-        @media(min-resolution: 2dppx) {
-            background: url("../../img/popup-header@2x.webp");
-            background-position: center;
-            background-size: cover;
-        }
     }
 
     .login-title {
