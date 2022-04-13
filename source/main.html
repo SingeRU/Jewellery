@@ -48,8 +48,8 @@
           </label>
         </div>
         <div class="header-top__logo">
-          <svg width="66" height="66" viewBox="0 0 66 66">
-            <use class="header-top__logo__use" xlink:href="#logo"></use>
+          <svg width="66" height="66" viewBox="0 0 66 66" fill="inheritColor">
+            <use class="header-top__logo__use" xlink:href="#logo" fill="inheritColor"></use>
           </svg>
         </div>
         <div class="header-top__options options">
@@ -131,7 +131,7 @@
         <p class="promo-text">made to be yours</p>
       </div>
     </section>
-    <section class="slider container">
+    <section class="slider">
       <h2 class="slider-title">New In</h2>
       <a class="slider-link" href="#">Shop Now</a>
       <div class="swiper-button-prev"></div>
@@ -265,7 +265,7 @@
           <img src="img/photo-1.webp" srcset="img/photo-1.webp 1x, img/photo-1@2x.webp 2x" alt="Photo-1" width="230" height="230">
         </div>
         <div class="grid-block grid-block--2">
-          <img src="img/photo-2.webp" srcset="img/photo-2.webp 1x, img/photo-1@2x.webp 2x" alt="Photo-2" width="230" height="150">
+          <img src="img/photo-2.webp" srcset="img/photo-2.webp 1x, img/photo-2@2x.webp 2x" alt="Photo-2" width="230" height="150">
         </div>
         <div class="grid-block grid-block--3">
           <img src="img/photo-3.webp" srcset="img/photo-3.webp 1x, img/photo-3@2x.webp 2x" alt="Photo-3" width="399" height="412">
@@ -293,7 +293,7 @@
         <p class="singup-text">News and updates from CH. No spam, we promise.</p>
         <div class="singup-field">
           <label>
-            <input class="singup-input" type="email" placeholder="Your E-mail">
+            <input class="singup-input" type="email" placeholder="Your E-mail" required>
           </label>
           <a class="signup-button" href="#">Sign Up</a>
         </div>
@@ -391,6 +391,7 @@
         </div>
       </fieldset>
     </form>
+    <div class="overlay"></div>
   </div>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="js/vendor.js" type="module"></script>

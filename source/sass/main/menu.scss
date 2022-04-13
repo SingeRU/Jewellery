@@ -17,10 +17,10 @@
   display: block;
   background-color: $brown;
   width: 100%;
-  top: 99px;
+  top: 97px;
   left: 0;
   z-index: 2;
-  min-height: 678px;
+  height: 100%;
 }
 
 .menu--opened .header-container {
@@ -54,7 +54,7 @@
   background-color: $background-opacity-white;
   width: 100%;
   height: 40px;
-  margin-top: 2.3rem;
+  margin-top: 2.4rem;
   border-radius: 21px;
   border: none;
   padding-left: 40px;

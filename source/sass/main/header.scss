@@ -37,6 +37,10 @@
     right: 2.8rem;
 }
 
+.header-top__logo__use {
+    fill: $brown;
+}
+
 .header-top__input {
     font-size: 14px;
     font-weight: 500;
@@ -129,10 +133,6 @@
     .header-top__logo {
         top: 0;
         right: 0.13em;
-    }
-
-    .header-top__logo use {
-        fill: $brown;
     }
 
     .header-bottom {

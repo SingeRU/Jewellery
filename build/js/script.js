@@ -16,6 +16,7 @@ let burgerButtonSvg = document.querySelector('.header-burger__use')
 let optionsImage =document.querySelector('.options-image')
 let optionsImageSvg = document.querySelector('.options-image__use');
 let menu = document.querySelector('.menu');
+let overlay = document.querySelector('.overlay');
 
 for (let i = 0; i < acc.length; i++) {
   acc[i].addEventListener('click', function() {
@@ -41,6 +42,7 @@ burgerButton.addEventListener('click', () => {
     logo.style.fill = "#ffffff";
     burgerButtonSvg.style.stroke = "#ffffff";
     optionsImageSvg.style.stroke = "#ffffff";
+    body.style.overflow = "hidden";
   } else {
     menu.classList.add('menu--closed');
     menu.classList.remove('menu--opened');
@@ -50,6 +52,7 @@ burgerButton.addEventListener('click', () => {
     logo.style.fill = "#A87B62";
     burgerButtonSvg.style.stroke = "#1D1613";
     optionsImageSvg.style.stroke = "#1D1613";
+    body.style.overflow = "auto";
   }
 });
 
@@ -68,7 +71,7 @@ if(filterOpen != null) {
 if(filterClose != null) {
   filterClose.addEventListener('click', () => {
     filter.classList.remove('opened');
-    body.classList.remove('page-body--fixed');
+    body.style.overflow = 'auto';
   });
 }
 
@@ -90,14 +93,21 @@ loginClose.addEventListener('click', () => {
 loginForm.addEventListener('submit', () => {
   localStorage.setItem('email', loginEmail.value);
   localStorage.setItem('password', loginPassword.value);
+});
+
+overlay.addEventListener('click', () => {
+  loginClose.classList.remove('login--opened');
+  login.classList.add('login--closed');
+  body.style.overflow = 'auto';
 })
 
 window.addEventListener('keydown', (evt) => {
-  if(login.classList.contains('login--opened')) {
-    evt.preventDefault();
-    login.classList.remove('login--opened');
-    login.classList.add('login--closed');
-    body.style.overflow = 'auto';
+  if(evt.keyCode === '27') {
+    if(login.classList.contains('login--opened')) {
+      evt.preventDefault();
+      login.classList.remove('login--opened');
+      login.classList.add('login--closed');
+      body.style.overflow = 'auto';
+    }
   }
-
 });

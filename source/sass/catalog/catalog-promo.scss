@@ -12,11 +12,13 @@
     background: url("../img/catalog-bg.webp");
     background-size: cover;
     background-position: center;
+    background-color: $brown;
 
     @media(min-resolution: 2dppx) {
         background: url("../img/catalog-bg@2x.webp");
         background-position: center;
         background-size: cover;
+        background-color: $brown;
     }
 
     text-align: center;
@@ -54,11 +56,13 @@
       background: url("../img/catalog-bg-tab.webp");
       background-size: cover;
       background-repeat: no-repeat;
+      background-color: $brown;
 
       @media(min-resolution: 2dppx) {
             background: url("../img/catalog-bg-tab@2x.webp");
             background-size: cover;
             background-repeat: no-repeat;
+            background-color: $brown;
         }
     }
 
@@ -78,11 +82,13 @@
         background: url("../img/catalog-bg-mob.webp");
         background-size: cover;
         background-repeat: no-repeat;
+        background-color: $brown;
 
         @media(min-resolution: 2dppx) {
             background: url("../img/catalog-bg-mob@2x.webp");
             background-size: cover;
             background-repeat: no-repeat;
+            background-color: $brown;
         }
     }
 

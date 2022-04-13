@@ -9,9 +9,9 @@ new Swiper('.swiper', {
       spaceBetween: 20
     },
 
-    1024: {
+    1023: {
       slidesPerView: 4,
-      spaceBetween: 20
+      spaceBetween: 25
     }
   },
 
