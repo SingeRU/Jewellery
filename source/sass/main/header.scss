@@ -113,6 +113,10 @@
         border: none;
     }
 
+    .header-burger use {
+        stroke: $dark;
+    }
+
     .header-top {
         display: block;
         padding: 0;
@@ -125,6 +129,10 @@
     .header-top__logo {
         top: 0;
         right: 0.13em;
+    }
+
+    .header-top__logo use {
+        fill: $brown;
     }
 
     .header-bottom {
@@ -141,7 +149,7 @@
         padding: 0 0.5rem;
     }
 
-    .header-top__logo img {
+    .header-top__logo {
         transform: scale(0.8);
     }
 }

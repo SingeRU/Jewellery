@@ -1,0 +1,145 @@
+.menu {
+  display: none;
+}
+
+.menu--nojs {
+  background-color: $brown;
+  display: block;
+  min-height: 678px;
+}
+
+.menu--closed {
+  display: none;
+}
+
+.menu--opened {
+  position: absolute;
+  display: block;
+  background-color: $brown;
+  width: 100%;
+  top: 99px;
+  left: 0;
+  z-index: 2;
+  min-height: 678px;
+}
+
+.menu--opened .header-container {
+  background-color: $brown;
+}
+
+.menu--opened use {
+  stroke: $white;
+}
+
+.menu-container {
+  width: 88.5%;
+  margin: 0 auto;
+}
+
+.menu-container label {
+  position: relative;
+}
+
+.menu-icon {
+  position: absolute;
+  left: 14px;
+  top: 5px;
+}
+
+.menu-icon use {
+  fill: $white;
+}
+
+.menu-search {
+  background-color: $background-opacity-white;
+  width: 100%;
+  height: 40px;
+  margin-top: 2.3rem;
+  border-radius: 21px;
+  border: none;
+  padding-left: 40px;
+}
+
+.menu-list,
+.menu-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  margin-top: 2.2rem;
+}
+
+.menu-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 57px;
+  color: $white;
+}
+
+.menu-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  margin-top: 1.2rem;
+}
+
+.menu-info__link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 240%;
+  color: $opacity-white;
+}
+
+.menu-login {
+  display: inline-block;
+  text-align: left;
+  background-color: $brown;
+  color: $white;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  margin-right: 0;
+  margin-top: 2.2rem;
+}
+
+@media (max-width: $tablet-width) {
+  .menu--opened {
+    top: 83px;
+  }
+
+  .menu-container {
+    width: 90%;
+  }
+
+  .menu-icon {
+    left: 12px;
+    top: 6px;
+  }
+
+  .menu-search {
+    margin-top: 1.1rem;
+  }
+
+  .menu-list {
+    margin-top: 2.3rem;
+    gap: 21px;
+  }
+
+  .menu-link {
+    line-height: 36px;
+  }
+
+  .menu-login {
+    margin-top: 1.6rem;
+  }
+}
