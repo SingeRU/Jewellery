@@ -219,7 +219,7 @@
     }
 
     .filter-accordion:after {
-        right: 3.15rem;
+        right: 2.8rem;
         top: 2.5rem;
     }
 
@@ -229,9 +229,13 @@
         max-width: 442px;
     }
 
+    .active+.filter-panel {
+        margin-bottom: 2.15rem;
+    }
+
     .active + .filter-range {
-        min-height: 140px;
-        margin-bottom: 2rem;
+        min-height: 80px;
+        margin-bottom: 0;
     }
 
     .filter-panel {
@@ -304,8 +308,36 @@
 
     .filter-apply,
     .filter-clearall {
-        width: 55%;
-        max-width: 442px;
+        width: 47.3%;
+        position: relative;
+        max-width: 400px;
+        left: 20px;
+    }
+
+    .filter-apply {
+        margin-top: 2.6rem;
+    }
+    
+    .opened .filter-accordion--material {
+        padding: 2.1rem 1.35rem 2.15rem 1.3rem;
+
+        &::after {
+            right: 2.65rem;
+            top: 2.7rem;
+        }
+    }
+
+    .opened .filter-accordion--collection {
+        padding: 2.1rem 1.4rem 2.1rem 1.35rem;
+
+        &::after {
+            right: 2.65rem;
+            top: 2.7rem;
+        }
+    }
+
+    .opened .filter-accordion--price {
+        padding: 2.1rem 1.4rem 1.5rem 1.35rem;
     }
 }
 
@@ -315,27 +347,28 @@
     }
 
     .opened .filter-accordion {
-        padding: 1.9rem 1.4rem 1rem;
+        padding: 1.9rem 1.4rem 1.1rem 1.3rem;
     }
 
     .filter-wrapper {
         max-width: 100%;
         width: 100%;
-        padding: 0 1.4rem;
+        padding: 0 1.55rem;
     }
 
     .filter-accordion:after {
-        right: 1.7rem;
+        right: 1.5rem;
+        top: 2.4rem;
     }
 
     .filter-close {
-        top: 7.7%;
+        top: 2.2%;
         right: 4.7%;
     }
 
     .active + .filter-panel {
         margin-top: 0.5rem;
-        margin-bottom: 1.3rem;
+        margin-bottom: 1.5rem;
     }
 
     .active+.filter-range {
@@ -344,7 +377,7 @@
     }
 
     .active + .filter-range hr {
-        top: 27px;
+        top: 24px;
     }
 
     .active+.filter-range hr::after {
@@ -354,42 +387,71 @@
 
     .active+.filter-range::after,
     .active+.filter-range::before {
-        top: 19px;
+        top: 16px;
     }
 
     .active+.filter-range::before {
-        left: 191px;
+        left: 188px;
     }
 
     .active+.filter-range::after {
-        left: 53px;
+        left: 50px;
     }
 
     .filter-panel label {
-        padding-left: 2.8rem;
+        padding-left: 2.6rem;
     }
 
     .active+.filter-range p:nth-child(n) {
-        top: 30px;
-        left: 181px;
+        top: 27px;
+        left: 179px;
         font-style: 16px;
     }
 
     .active+.filter-range p:nth-child(2n) {
-        left: 45px;
+        left: 44px;
     }
 
-    .filter-apply, .filter-clearall {
+    .filter-apply, 
+    .filter-clearall {
         width: 72%;
         margin: 0 auto;
         max-width: 100%;
+        left: 0;
     }
 
     .filter-apply {
-        margin-top: 2.1rem;
+        margin-top: 1.9rem;
     }
 
     .filter-clearall {
         margin-top: 1.3rem;
+    }
+
+    .opened .filter-accordion--material {
+        padding: 1.5rem 1.35rem 1.45rem 1.3rem;
+
+        &::after {
+            right: 1.3rem;
+            top: 2rem;
+        }
+    }
+
+    .opened .filter-accordion--collection {
+        padding: 1.5rem 1.4rem 1.5rem 1.34rem;
+
+        &::after {
+            right: 1.3rem;
+            top: 2rem;
+        }
+    }
+
+    .opened .filter-accordion--price {
+        padding: 1.5rem 1.4rem 1.15rem 1.35rem;
+
+        &::after {
+            right: 1.5rem;
+            top: 2rem;
+        }
     }
 }

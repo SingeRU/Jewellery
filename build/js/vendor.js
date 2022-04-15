@@ -6,12 +6,16 @@ new Swiper('.swiper', {
   breakpoints: {
     320: {
       slidesPerView: 2,
-      spaceBetween: 20
+      spaceBetween: 20,
+      slidesPerGroup: 2,
+      loopFillGroupWithBlank: true
     },
 
     1023: {
       slidesPerView: 4,
-      spaceBetween: 25
+      spaceBetween: 20,
+      slidesPerGroup: 4,
+      loopFillGroupWithBlank: true
     }
   },
 
