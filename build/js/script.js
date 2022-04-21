@@ -17,6 +17,7 @@ let optionsImage =document.querySelector('.options-image')
 let optionsImageSvg = document.querySelector('.options-image__use');
 let menu = document.querySelector('.menu');
 let overlay = document.querySelector('.overlay');
+let menuContainer = document.querySelector('.menu-container');
 
 for (let i = 0; i < acc.length; i++) {
   acc[i].addEventListener('click', function() {
@@ -30,29 +31,31 @@ for (let i = 0; i < acc.length; i++) {
   });
 }
 
-menu.classList.remove('menu--nojs')
+//Menu container scroll
 
+//Burger
+menu.classList.remove('menu--nojs')
 burgerButton.addEventListener('click', () => {
   if(menu.classList.contains('menu--closed')) {
     menu.classList.remove('menu--closed');
     menu.classList.add('menu--opened');
-    headerContainer.style.backgroundColor = "#A87B62";
-    burgerButton.style.backgroundColor = "#A87B62";
-    optionsImage.style.backgroundColor = "#A87B62";
-    logo.style.fill = "#ffffff";
-    burgerButtonSvg.style.stroke = "#ffffff";
-    optionsImageSvg.style.stroke = "#ffffff";
-    body.style.overflow = "hidden";
+    headerContainer.style.backgroundColor = '#A87B62';
+    burgerButton.style.backgroundColor = '#A87B62';
+    optionsImage.style.backgroundColor = '#A87B62';
+    logo.style.fill = '#ffffff';
+    burgerButtonSvg.style.stroke = '#ffffff';
+    optionsImageSvg.style.stroke = '#ffffff';
+    body.style.overflow = 'hidden';
   } else {
     menu.classList.add('menu--closed');
     menu.classList.remove('menu--opened');
-    headerContainer.style.backgroundColor = "#ffffff";
-    burgerButton.style.backgroundColor = "#ffffff";
-    optionsImage.style.backgroundColor = "#ffffff";
-    logo.style.fill = "#A87B62";
-    burgerButtonSvg.style.stroke = "#1D1613";
-    optionsImageSvg.style.stroke = "#1D1613";
-    body.style.overflow = "auto";
+    headerContainer.style.backgroundColor = '#ffffff';
+    burgerButton.style.backgroundColor = '#ffffff';
+    optionsImage.style.backgroundColor = '#ffffff';
+    logo.style.fill = '#A87B62';
+    burgerButtonSvg.style.stroke ='#1D1613';
+    optionsImageSvg.style.stroke = '#1D1613';
+    body.style.overflow = 'auto';
   }
 });
 
@@ -81,6 +84,8 @@ loginButtons.forEach((loginButton) => {
     login.classList.remove('login--closed');
     login.classList.add('login--opened');
     body.style.overflow = 'hidden';
+    body.setAttribute('tabindex', -1);
+    loginEmail.focus();
   });
 })
 
@@ -111,3 +116,16 @@ window.addEventListener('keydown', (evt) => {
     }
   }
 });
+
+let timerId = setTimeout(function menuScroll() {
+  if(menu.classList.contains('menu--opened')) {
+    if(menuContainer.clientHeight >= window.innerHeight && menuContainer.clientHeight <= 600) {
+      menuContainer.style.height = window.innerHeight - 100 + 'px';
+      menuContainer.style.overflowY = 'scroll';
+    } else {
+      menuContainer.style.height = window.innerHeight + 'px';
+    }
+  }
+
+  timerId = setTimeout(menuScroll, 2000);
+}, 2000);

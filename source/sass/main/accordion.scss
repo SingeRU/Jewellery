@@ -28,7 +28,7 @@
   line-height: 44px;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 3.2rem;
+  margin-bottom: 3rem;
 }
 
 .accordion {
@@ -120,6 +120,7 @@
 @media (max-width: $tablet-width) {
   .main-accordion {
     min-width: 290px;
+    margin-top: 3.3rem;
   }
 
   .main-accrodion-wrapper {

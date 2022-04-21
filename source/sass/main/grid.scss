@@ -104,7 +104,7 @@
 
 @media (max-width: $desktop-width) {
     .grid {
-        margin-top: 4.5rem;
+        margin-top: 4.7rem;
     }
 
     .grid-link {
@@ -113,8 +113,10 @@
 
     .grid-body {
         grid-template-columns: 0.95fr 1.5fr 0.95fr 0.95fr;
+        margin: 0 auto;
+        max-width: 900px;
         margin-top: 4rem;
-        row-gap: 20px;
+        row-gap: 1.2rem;
         column-gap: 0;
         padding: 0 46px;
         height: 100%;
@@ -131,9 +133,10 @@
     }
 
     .grid-block--2 {
-        height: 87px;
-        text-align: left;
+        max-height: 100%;
         max-width: 100%;
+        min-height: 87px;
+        text-align: left;
     }
 
     .grid-block--3 {
@@ -146,7 +149,7 @@
     }
 
     .grid-block--5 {
-        height: 87px;
+        min-height: 87px;
     }
 
     .grid-block--6 {
@@ -154,7 +157,7 @@
     }
 
     .grid-block--7 {
-        height: 87px;
+        min-height: 87px;
     }
 
     .grid-block--1 img,
@@ -165,11 +168,17 @@
     .grid-block--7 img {
         max-width: 89%;
     }
+
+    .grid-block--2 img,
+    .grid-block--5 img,
+    .grid-block--7 img {
+        height: 100%;
+    }
 }
 
 @media (max-width: $tablet-width) {
     .grid {
-        margin-top: 3.3rem;
+        margin-top: 3.1rem;
     }
 
     .grid-link {

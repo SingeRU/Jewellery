@@ -250,6 +250,7 @@
         flex-direction: row;
         height: 100%;
         padding: 0 2.8rem;
+        padding-bottom: 3rem;
     }
 
     .singup {
@@ -298,11 +299,12 @@
 
 @media (max-width: $tablet-width) {
     .footer {
-        margin-top: 1.6rem;
+        margin-top: 4.4rem;
     }
 
     .footer-container {
         padding: 0 1rem;
+        padding-bottom: 3.5rem;
     }
 
     .singup-field {

@@ -1,3 +1,9 @@
+.options {
+    max-width: 120px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .options-login,
 .options-cart {
     font-size: 14px;

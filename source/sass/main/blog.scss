@@ -70,7 +70,7 @@
 
 .blog-body__image img {
     width: 100%;
-    height: 98.5%;
+    height: 100%;
     object-fit: cover;
     position: absolute;
     top: 0;
@@ -82,7 +82,7 @@
     text-align: center;
     width: 100%;
     flex: 0 1 49%;
-    height: 300px;
+    min-height: 300px;
 }
 
 .blog-body__text {
@@ -100,10 +100,11 @@
     line-height: 130%;
     color: $dark;
     margin-top: 0.9rem;
-    padding-left: 3.1rem;
-    padding-right: 3rem;
+    padding-left: 3.5rem;
+    padding-right: 2.9rem;
 }
 .blog-body__link {
+    margin-top: 1.05rem;
     bottom: 0;
 }
 
@@ -142,8 +143,8 @@
 .blog-body__event--trends .blog-body__description {
     position: absolute;
     width: 49%;
-    height: 300px;
-    bottom: 10px;
+    min-height: 300px;
+    bottom: 0px;
     right: 0;
 }
 
@@ -263,7 +264,7 @@
     .blog-body {
         margin-top: 3.5rem;
         padding: 0 15px;
-        row-gap: 30px;
+        row-gap: 2.2rem;
     }
 
     .blog-body__event {
@@ -299,6 +300,7 @@
     .blog-body__description {
         flex: 0 1 100%;
         padding-bottom: 56px;
+        min-height: 256px;
         width: 290px;
         left: 0;
     }
@@ -324,6 +326,7 @@
     .blog-body__event--crystals .blog-body__description {
         order: 1;
         position: relative;
+        bottom: 4px;
     }
 
     .blog-body__event--crystals .blog-body__image img {
@@ -336,6 +339,7 @@
     .blog-body__event--trends .blog-body__description {
         left: 0;
         width: 290px;
+        min-height: 256px;
     }
 
     .blog-body__event--trends .blog-body__title {
