@@ -10,6 +10,7 @@ let loginClose = document.querySelector('.login-close');
 let loginForm = document.querySelector('.login-form');
 let loginEmail = document.querySelector('.email');
 let loginPassword = document.querySelector('.password');
+let loginLink = document.querySelector('.login-account__link');
 let logo = document.querySelector('.header-top__logo__use');
 let burgerButton = document.querySelector('.header-burger');
 let burgerButtonSvg = document.querySelector('.header-burger__use')
@@ -19,6 +20,9 @@ let menu = document.querySelector('.menu');
 let overlay = document.querySelector('.overlay');
 let menuContainer = document.querySelector('.menu-container');
 
+
+
+
 for (let i = 0; i < acc.length; i++) {
   acc[i].addEventListener('click', function() {
     this.classList.toggle('active');
@@ -26,12 +30,11 @@ for (let i = 0; i < acc.length; i++) {
     if (panel.style.maxHeight){
       panel.style.maxHeight = null;
       } else {
-      panel.style.maxHeight = panel.scrollHeight + 'px';
+      panel.style.maxHeight = panel.scrollHeight + '%';
     }
   });
 }
 
-//Menu container scroll
 
 //Burger
 menu.classList.remove('menu--nojs')
@@ -84,7 +87,6 @@ loginButtons.forEach((loginButton) => {
     login.classList.remove('login--closed');
     login.classList.add('login--opened');
     body.style.overflow = 'hidden';
-    body.setAttribute('tabindex', -1);
     loginEmail.focus();
   });
 })
@@ -98,6 +100,10 @@ loginClose.addEventListener('click', () => {
 loginForm.addEventListener('submit', () => {
   localStorage.setItem('email', loginEmail.value);
   localStorage.setItem('password', loginPassword.value);
+});
+
+loginPassword.addEventListener('blur', () => {
+  loginClose.focus();
 });
 
 overlay.addEventListener('click', () => {

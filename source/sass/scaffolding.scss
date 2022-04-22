@@ -24,7 +24,6 @@ html {
   overflow: auto;
 }
 
-
 img {
   max-width: 100%;
   height: auto;
@@ -47,6 +46,10 @@ img {
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
 }
 
 //Описываем контейнер

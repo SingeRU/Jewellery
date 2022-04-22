@@ -54,19 +54,23 @@
 
 .login-close {
     position: absolute;
-    width: 0;
-    height: 0;
-    background-color: inherit;
+    width: 20px;
+    height: 20px;
+    background-color: $opacity-color;
     border: none;
     padding: 0;
     top: 17px;
-    right: 37px;
+    right: 17px;
 
     cursor: pointer;
 }
 
 .login-close svg {
     transform: scale(0.7);
+}
+
+.login-close:focus {
+    outline: 3px solid $black;
 }
 
 .login-image {

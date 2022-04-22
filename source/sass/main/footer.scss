@@ -10,7 +10,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    height: 225px;
+    height: 100%;
 }
 
 .singup {
@@ -82,10 +82,13 @@
 
 .signup-button {
     margin-right: 0;
+    padding: 0;
     cursor: pointer;
     position: relative;
     color: $white;
     text-decoration: none;
+    border: none;
+    background-color: $black;
 
     &::after {
         content: "";
@@ -109,28 +112,45 @@
 }
 
 .functions {
-    flex: 0 1 36.5%;
-    margin-left: 5.5rem;
+    display: flex;
+    flex-direction: row;
+    flex: 0 1 45.5%;
+    flex-wrap: wrap;
+    min-height: 225px;
+    justify-content: flex-start;
 }
 
-.functions-list {
+.functions-list,
+.functions-contacts {
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    height: 165px;
-    margin-top: 3.1rem;
+    min-height: 165px;
+    margin-top: 2.8rem;
 }
 
-.functions-list__item {
-    flex: 0 1 25%;
+.functions-list {
+    flex: 0 1 44.5%;
+    margin-left: 5.6rem;
+    
+}
+
+.functions-contacts {
+    flex: 0 1 38%;
+}
+
+.functions-list__item,
+.functions-contacts__item {
     padding-right: 15px;
+    height: 2.6rem;
 }
 
-.functions-list__link {
+.functions-list__link,
+.functions-contacts__link {
     font-weight: 500;
     font-size: 16px;
     line-height: 21px;
@@ -140,11 +160,13 @@
     color: $white;
 }
 
-.functions-list__link:hover {
+.functions-list__link:hover,
+.functions-contacts__link:hover {
     color: $brown;
 }
 
-.functions-list__link:active {
+.functions-list__link:active,
+.functions-contacts__link:active {
     opacity: 0.7;
 }
 
@@ -288,6 +310,22 @@
     .functions {
         flex: 0 1 67.5%;
         margin: 0;
+        justify-content: space-between;
+    }
+
+    .functions-list {
+        margin-left: 0;
+        margin-top: 3rem;
+    }
+
+    .functions-contacts {
+        flex: 0 1 44%;
+        margin-top: 3rem;
+    }
+
+    .functions-contacts__item, 
+    .functions-list__item {
+        flex: 0 1 23%;
     }
 
     .socials {
@@ -337,6 +375,7 @@
         flex: 0 1 100%;
         margin: 0;
         height: 100%;
+        flex-direction: column;
     }
 
     .functions-list {
@@ -344,11 +383,20 @@
         margin-top: 2.8rem;
     }
 
-    .functions-list__item {
+    .functions-list__item,
+    .functions-contacts__item {
         flex: 0 0 auto;
         height: 2.8rem;
     }
 
+    .functions-contacts {
+        margin-top: 0.9rem;
+        
+    }
+
+    .functions-contacts__item {
+        height: 2.6rem;
+    }
 
     .socials {
         flex: 0 1 100%;
