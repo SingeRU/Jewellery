@@ -1,7 +1,8 @@
 .options {
-    max-width: 120px;
     display: flex;
     flex-wrap: wrap;
+    flex: 0 1 25.333%;
+    justify-content: flex-end;
 }
 
 .options-login,
@@ -26,11 +27,12 @@
 }
 
 .options-login {
-    margin-right: 2rem;
+    margin-right: 2.3rem;
 }
 
 .options-cart {
     text-decoration: none;
+    margin-right: 0.1rem;
 }
 
 .options-login:hover,

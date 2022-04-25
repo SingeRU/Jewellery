@@ -102,10 +102,6 @@ loginForm.addEventListener('submit', () => {
   localStorage.setItem('password', loginPassword.value);
 });
 
-loginPassword.addEventListener('blur', () => {
-  loginClose.focus();
-});
-
 overlay.addEventListener('click', () => {
   loginClose.classList.remove('login--opened');
   login.classList.add('login--closed');
@@ -135,3 +131,11 @@ let timerId = setTimeout(function menuScroll() {
 
   timerId = setTimeout(menuScroll, 2000);
 }, 2000);
+
+loginLink.addEventListener('focus', function() {
+  loginLink.setAttribute('tabindex', 1);
+});
+
+loginLink.addEventListener('blur', function() {
+  loginLink.setAttribute('tabindex', 7);
+})

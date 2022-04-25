@@ -31,7 +31,7 @@
       </svg>
     </button>
     <form class="login-form" action="https://echo.htmlacademy.ru/" autocomplete="off">
-      <button class="login-close" type="button" aria-label="Close">
+      <button class="login-close" type="button" aria-label="Close" tabindex="2">
         <svg width="20" height="20" fill="none">
           <use xlink:href="#popupClose"></use>
         </svg>
@@ -41,17 +41,17 @@
       <fieldset class="login-fieldset">
         <div class="login-fields">
           <label>
-            <input class="login-input email" type="email" name="email" placeholder="Your E-mail" required>
+            <input class="login-input email" type="email" name="email" placeholder="Your E-mail" required tabindex="3">
           </label>
           <label>
-            <input class="login-input password" type="text" name="password" placeholder="Password" required>
+            <input class="login-input password" type="password" name="password" placeholder="Password" required tabindex="4">
           </label>
-          <a href="#" class="login-forgot">Forgot your password?</a>
+          <a href="#" class="login-forgot" tabindex="5">Forgot your password?</a>
         </div>
-        <button class="login-button" type="submit" aria-label="Submit">Log In</button>
+        <button class="login-button" type="submit" aria-label="Submit" tabindex="6">Log In</button>
         <div class="login-account">
           <p class="login-account__text">Don’t have an account?</p>
-          <a href="#" class="login-account__link">Sign up</a>
+          <a href="#" class="login-account__link" tabindex="7">Sign up</a>
         </div>
       </fieldset>
     </form>

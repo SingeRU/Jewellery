@@ -16,6 +16,10 @@
     padding: 0 10px;
 }
 
+.header-top__search {
+    flex: 0 1 33.333%;
+}
+
 .header-top__search label {
     position: relative;
     padding-left: 1.7rem;
@@ -35,6 +39,8 @@
     position: relative;
     top: 0.8rem;
     right: 2.8rem;
+    flex: 0 1 41.33%;
+    text-align: center;
 }
 
 .header-top__logo__use {
