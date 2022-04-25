@@ -20,9 +20,6 @@ let menu = document.querySelector('.menu');
 let overlay = document.querySelector('.overlay');
 let menuContainer = document.querySelector('.menu-container');
 
-
-
-
 for (let i = 0; i < acc.length; i++) {
   acc[i].addEventListener('click', function() {
     this.classList.toggle('active');
@@ -37,7 +34,8 @@ for (let i = 0; i < acc.length; i++) {
 
 
 //Burger
-menu.classList.remove('menu--nojs')
+menu.classList.remove('menu--nojs');
+menu.classList.add('menu--close');
 burgerButton.addEventListener('click', () => {
   if(menu.classList.contains('menu--closed')) {
     menu.classList.remove('menu--closed');

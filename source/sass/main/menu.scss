@@ -2,12 +2,6 @@
   display: none;
 }
 
-.menu--nojs {
-  background-color: $brown;
-  display: block;
-  min-height: 678px;
-}
-
 .menu--closed {
   display: none;
 }
@@ -112,7 +106,16 @@
   margin-top: 2.2rem;
 }
 
+@media (max-width: $desktop-width) {
+  .menu--nojs {
+    background-color: $brown;
+    display: block;
+    min-height: 678px;
+  }
+}
+
 @media (max-width: $tablet-width) {
+
   .menu--opened {
     top: 83px;
   }
